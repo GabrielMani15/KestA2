@@ -1,0 +1,5 @@
+$username =Read-Host "Enter a user name"
+$fullname =Read-Host "Enter full name"
+$password =Read-host "Enter a password" -AsSecureString
+New-LocalUser -Name $username -Fullname $fullname -Password $pass
+Write-Output "create" $username
